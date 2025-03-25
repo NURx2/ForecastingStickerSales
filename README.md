@@ -13,6 +13,7 @@ A machine learning project for forecasting sticker sales using LightGBM.
 │   ├── data/        # Data processing scripts
 │   ├── entities/    # Data classes
 │   ├── features/    # Feature engineering
+│   ├── utils/       # Utilities
 │   └── models/      # Model training and prediction
 └── tests/           # Unit tests
 ```
