@@ -1,0 +1,29 @@
+data:
+  test_path: "data/test.csv"
+  target_column: "num_sold"
+  features:
+    - "date"
+    - "country"
+    - "store"
+    - "product"
+
+model:
+  name: "lightgbm"
+  model_path: "models/model.pkl"
+
+features:
+  time_features:
+    - "year"
+    - "month"
+    - "day"
+    - "dayofweek"
+    - "quarter"
+    - "is_weekend"
+    - "is_holiday"
+  categorical_features:
+    - "country"
+    - "store"
+    - "product"
+
+output:
+  predictions_path: "models/predictions.csv" 

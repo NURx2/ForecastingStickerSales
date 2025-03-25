@@ -1,0 +1,40 @@
+data:
+  train_path: "data/train.csv"
+  test_path: "data/test.csv"
+  target_column: "num_sold"
+  features:
+    - "date"
+    - "country"
+    - "store"
+    - "product"
+
+model:
+  name: "lightgbm"
+  params:
+    objective: "regression"
+    metric: "mape"
+    learning_rate: 0.01
+    num_leaves: 31
+    max_depth: 6
+    n_estimators: 1000
+    early_stopping_rounds: 50
+
+training:
+  test_size: 0.2
+  random_state: 42
+  n_folds: 5
+  output_dir: "models"
+
+features:
+  time_features:
+    - "year"
+    - "month"
+    - "day"
+    - "dayofweek"
+    - "quarter"
+    - "is_weekend"
+    - "is_holiday"
+  categorical_features:
+    - "country"
+    - "store"
+    - "product" 
