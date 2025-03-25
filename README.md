@@ -55,18 +55,6 @@ python -m src.models.predict
 
 The dataset contains sales data for Kaggle-branded stickers from different stores across various countries.
 
-## Usage
-
-1. Train the model:
-```bash
-python src/models/train.py
-```
-
-2. Generate predictions:
-```bash
-python src/models/predict.py
-```
-
 ## Project Organization
 
 - `configs/`: Contains YAML configuration files for training and prediction pipelines
